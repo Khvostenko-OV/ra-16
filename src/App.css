@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.post-list {
+  width: fit-content;
+  background: #eee;
+  padding: .5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.post-item {
+  width: 480px;
+  box-sizing: border-box;
+  border: 1px solid #444;
+  border-radius: 2px;
+  margin: .5em 0;
+  padding: .5em;
+  cursor: default;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.post-card {
+  width: 480px;
+  box-sizing: border-box;
+  border: 1px solid #444;
+  border-radius: 2px;
+  padding: .5em;
+  position: relative;
+}
+
+.link-btn {
+  width: fit-content;
+  background: #44F;
   color: white;
+  margin: .1em;
+  padding: .2em .5em;
+  border: 1px solid #11d;
+  border-radius: 2px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.link-btn:hover {
+  background: #11D;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete-btn {
+  width: fit-content;
+  background: #F44;
+  color: white;
+  margin: .1em;
+  padding: .2em .5em;
+  border: 1px solid #d11;
+  border-radius: 2px;
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: .5em;
+  right: .2em;
+}
+
+.delete-btn:hover {
+  background: #D11;
+}
+
+.close-btn {
+  width: fit-content;
+  background: white;
+  color: #888;
+  margin: .1em;
+  padding: .2em;
+  border: 1px solid #888;
+  border-radius: 2px;
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+  top: .4em;
+  right: .2em;
+}
+
+.close-btn:hover {
+  background: #eee;
+}
+
+.text {
+  width: 95%;
+}
+
+.date {
+  font-size: x-small;
+  color: #444;
 }
